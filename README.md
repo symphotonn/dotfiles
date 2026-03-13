@@ -72,6 +72,14 @@ export ANTHROPIC_API_KEY="sk-..."
 export PATH="$HOME/custom/bin:$PATH"
 ```
 
+## Important: always clone to ~/dotfiles
+
+**Never clone to `/tmp/` or any temporary directory.** Config files are symlinked from the clone location — if that directory disappears (e.g. `/tmp` is wiped on reboot), all your configs break silently. Always use:
+
+```bash
+git clone https://github.com/symphotonn/dotfiles.git ~/dotfiles
+```
+
 ## AI setup guide
 
 If you're an AI assistant helping set up this environment:
